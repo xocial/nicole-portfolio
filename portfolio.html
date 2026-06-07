@@ -395,6 +395,15 @@
   .f28-col p { margin:0 0 0.7em; }
   .f28-col b { font-weight:600; }
 
+  /* ================= FRAME 30 — Swipe (Problem) ================= */
+  .f30-text { position:absolute; color:#dcdad4; font-weight:300; font-size:1.3281cqw; line-height:1.5; }
+  .f30-text .h { display:block; color:var(--gold); font-weight:700; font-size:1.7188cqw; margin-bottom:0.6em; }
+  .f30-text p { margin:0 0 0.7em; }
+  .f30-text ul { list-style:none; padding:0; margin:0.4em 0 0; }
+  .f30-text li { position:relative; padding-left:1em; margin-bottom:0.45em; }
+  .f30-text li::before { content:"•"; position:absolute; left:0; }
+  .f30-text b { font-weight:700; }
+
   /* ================= FRAME 17 — CoFaDe-VR (Journey map, tall page) ================= */
   .f-tall { aspect-ratio:1280 / 1426; }   /* taller scrolling page */
   .f17-subtitle {
@@ -1465,7 +1474,7 @@
 
     <!-- section tab bar (Summary active, 6 tabs) -->
     <div class="f9-tab active" style="left:61.7188%; top:4.1667%; width:5.7031%; height:4.8611%;">Summary</div>
-    <div class="f9-tab" style="left:67.8906%; top:4.1667%; width:5.7031%; height:4.8611%;">Problem</div>
+    <div class="f9-tab" data-go="frame30" style="left:67.8906%; top:4.1667%; width:5.7031%; height:4.8611%;">Problem</div>
     <div class="f9-tab" style="left:74.0625%; top:4.1667%; width:5.7031%; height:4.8611%;">Process</div>
     <div class="f9-tab" style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
     <div class="f9-tab" style="left:86.4063%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
@@ -1484,9 +1493,47 @@
     <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 21</div>
   </section>
 
+  <!-- ================= FRAME 30 — Swipe-Revealed Hidden Widgets (Problem) ================= -->
+  <section class="frame" id="frame30" data-title="Frame 30 · Swipe-Revealed Hidden Widgets Problem">
+    <div class="f-header">PROBLEM STATEMENT</div>
+
+    <!-- section tab bar (Problem active) -->
+    <div class="f9-tab" data-go="frame29" style="left:61.7188%; top:4.1667%; width:5.7031%; height:4.8611%;">Summary</div>
+    <div class="f9-tab active" style="left:67.8906%; top:4.1667%; width:5.7031%; height:4.8611%;">Problem</div>
+    <div class="f9-tab" style="left:74.0625%; top:4.1667%; width:5.7031%; height:4.8611%;">Process</div>
+    <div class="f9-tab" style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
+    <div class="f9-tab" style="left:86.4063%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
+    <div class="f9-tab" style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
+
+    <!-- swipe-to-delete screenshot (left) -->
+    <img src="f30_swipe.png" alt="Swipe-to-delete UI example"
+         style="position:absolute; left:6.5625%; top:21.3889%; width:28.9844%; height:58.0556%; object-fit:fill;">
+    <div style="position:absolute; left:19.1406%; top:80.8333%; color:var(--white); font-weight:400; font-size:0.625cqw;">Image source: LINK</div>
+
+    <!-- context + issues text block (right) -->
+    <div class="f30-text" style="left:42.6563%; top:23.0556%; width:50.3906%;">
+      <span class="h">Context</span>
+      <p>As a trend, commercial mobile phones and tablets have widely implemented the &ldquo;<b>swipe to trigger contextual action</b>&rdquo; <b>(SWHIDGET: swipe-revealed hidden widgets)</b> interface to allow shortcut-like action</p>
+      <p>Issues of <b>lack of clear design guidance</b> for mobile interface design by any commercial product company or operation systems (Ref.):</p>
+      <ul>
+        <li><b>Lack of signifiers</b> makes it unclear where the contextual swipe can be used</li>
+        <li><b>Content is obscured</b> when the user swipes to reveal actions</li>
+        <li>Some of the actions associated with contextual swipe are <b>nonstandard</b>.</li>
+        <li>Contextual swipe is <b>sometimes used inconsistently</b> within the same app</li>
+        <li><b>Poorly implemented</b> swipe-to-delete can lead to loss of data</li>
+        <li><b>Swipe ambiguity</b> can affect how effective contextual swipe is</li>
+      </ul>
+    </div>
+
+    <!-- footer nav -->
+    <a class="btn f9-sm" style="left:42.6562%; top:93.0556%; width:5.7031%;" href="#" data-go="frame29">Previous</a>
+    <a class="btn f9-sm" style="left:49.4531%; top:93.0556%; width:5.7031%;" href="#" data-go="frame31">Next</a>
+    <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 22</div>
+  </section>
+
 <script>
   /* ---- simple frame navigation ---- */
-  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29"];
+  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30"];
   let cur = 0;
 
   function showFrame(id) {
