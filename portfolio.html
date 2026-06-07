@@ -395,6 +395,12 @@
   .f28-col p { margin:0 0 0.7em; }
   .f28-col b { font-weight:600; }
 
+  /* ================= FRAME 48 — Swipe (Problem p2, research framework) ================= */
+  .f48-band  { position:absolute; background:#263559; }
+  .f48-num   { position:absolute; color:#ffffff; opacity:0.20; font-weight:700; font-size:11.7188cqw; line-height:1; }
+  .f48-label { position:absolute; color:#00c2ff; font-weight:700; font-size:1.5625cqw; line-height:1.3; }
+  .f48-cell  { position:absolute; color:var(--white); font-weight:300; font-size:1.5625cqw; line-height:1.3; }
+
   /* ================= FRAME 30 — Swipe (Problem) ================= */
   .f30-text { position:absolute; color:#dcdad4; font-weight:300; font-size:1.3281cqw; line-height:1.5; }
   .f30-text .h { display:block; color:var(--gold); font-weight:700; font-size:1.7188cqw; margin-bottom:0.6em; }
@@ -1475,10 +1481,10 @@
     <!-- section tab bar (Summary active, 6 tabs) -->
     <div class="f9-tab active" style="left:61.7188%; top:4.1667%; width:5.7031%; height:4.8611%;">Summary</div>
     <div class="f9-tab" data-go="frame30" style="left:67.8906%; top:4.1667%; width:5.7031%; height:4.8611%;">Problem</div>
-    <div class="f9-tab" style="left:74.0625%; top:4.1667%; width:5.7031%; height:4.8611%;">Process</div>
-    <div class="f9-tab" style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
-    <div class="f9-tab" style="left:86.4063%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
-    <div class="f9-tab" style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
+    <div class="f9-tab" data-go="frame31" style="left:74.0625%; top:4.1667%; width:5.7031%; height:4.8611%;">Process</div>
+    <div class="f9-tab" data-go="frame32" style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
+    <div class="f9-tab" data-go="frame47" style="left:86.4063%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
+    <div class="f9-tab" data-go="frame49" style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
 
     <!-- PROJECT INFO (left column) -->
     <div class="f9-block" style="left:2.9688%; top:24.8611%; width:44.6094%;"><div class="h">PROJECT INFO</div><ul><li><b>Duration:</b> <span class="v">2016 - 2020 (Ph.D Thesis)</span></li><li><b>Role:</b> <span class="v">Senior UX researcher</span></li><li><b>Domain:</b> <span class="v">Computer Science</span></li><li><b>Thesis publication:</b> <span class="v">link</span></li></ul></div>
@@ -1499,11 +1505,11 @@
 
     <!-- section tab bar (Problem active) -->
     <div class="f9-tab" data-go="frame29" style="left:61.7188%; top:4.1667%; width:5.7031%; height:4.8611%;">Summary</div>
-    <div class="f9-tab active" style="left:67.8906%; top:4.1667%; width:5.7031%; height:4.8611%;">Problem</div>
-    <div class="f9-tab" style="left:74.0625%; top:4.1667%; width:5.7031%; height:4.8611%;">Process</div>
-    <div class="f9-tab" style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
-    <div class="f9-tab" style="left:86.4063%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
-    <div class="f9-tab" style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
+    <div class="f9-tab active"             style="left:67.8906%; top:4.1667%; width:5.7031%; height:4.8611%;">Problem</div>
+    <div class="f9-tab" data-go="frame31" style="left:74.0625%; top:4.1667%; width:5.7031%; height:4.8611%;">Process</div>
+    <div class="f9-tab" data-go="frame32" style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
+    <div class="f9-tab" data-go="frame47" style="left:86.4063%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
+    <div class="f9-tab" data-go="frame49" style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
 
     <!-- swipe-to-delete screenshot (left) -->
     <img src="f30_swipe.png" alt="Swipe-to-delete UI example"
@@ -1531,9 +1537,56 @@
     <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 22</div>
   </section>
 
+  <!-- ================= FRAME 48 — Swipe-Revealed Hidden Widgets (Problem p2, research framework) ================= -->
+  <section class="frame" id="frame48" data-title="Frame 48 · Swipe-Revealed Hidden Widgets Problem p2">
+    <div class="f-header">PROBLEM STATEMENT</div>
+
+    <!-- section tab bar (Problem active) -->
+    <div class="f9-tab" data-go="frame29" style="left:61.7188%; top:4.1667%; width:5.7031%; height:4.8611%;">Summary</div>
+    <div class="f9-tab active"              style="left:67.8906%; top:4.1667%; width:5.7031%; height:4.8611%;">Problem</div>
+    <div class="f9-tab" data-go="frame31"  style="left:74.0625%; top:4.1667%; width:5.7031%; height:4.8611%;">Process</div>
+    <div class="f9-tab" data-go="frame32"  style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
+    <div class="f9-tab" data-go="frame47"  style="left:86.4063%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
+    <div class="f9-tab" data-go="frame49"  style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
+
+    <!-- ghost background numbers -->
+    <div class="f48-num" style="left:30.9375%; top:15.8333%;">1</div>
+    <div class="f48-num" style="left:48.2813%; top:15.8333%;">2</div>
+    <div class="f48-num" style="left:66.3281%; top:15.8333%;">3</div>
+    <div class="f48-num" style="left:83.4375%; top:15.8333%;">4</div>
+
+    <!-- highlighted band (Research question row bg) -->
+    <div class="f48-band" style="left:4.5313%; top:39.3056%; width:91.9531%; height:23.1944%;"></div>
+
+    <!-- row labels -->
+    <div class="f48-label" style="left:6.9531%; top:42.9167%; width:15.0781%;">Research question</div>
+    <div class="f48-label" style="left:6.9531%; top:65.1389%; width:15.0781%;">Output</div>
+
+    <!-- column 1 -->
+    <div class="f48-cell" style="left:27.5781%; top:42.9167%; width:15.0781%;">What is signifier-less design (SLD)?</div>
+    <div class="f48-cell" style="left:27.5781%; top:65.1389%; width:15.0781%;">Theory &amp;<br>Definition analysis</div>
+
+    <!-- column 2 -->
+    <div class="f48-cell" style="left:45.4688%; top:42.9167%; width:15.0781%;">How do users discover swhidgets in the system?</div>
+    <div class="f48-cell" style="left:45.4688%; top:65.1389%; width:15.0781%;">Model of discovery<br>Source of knowledge<br>Degree of knowledge</div>
+
+    <!-- column 3 -->
+    <div class="f48-cell" style="left:63.1250%; top:42.9167%; width:15.0781%;">How do users deal with signifier-less designs (SLD) despite their lack of signifiers?</div>
+    <div class="f48-cell" style="left:63.1250%; top:65.1389%; width:15.0781%;">Lab study &amp; online survey</div>
+
+    <!-- column 4 -->
+    <div class="f48-cell" style="left:80.2344%; top:42.9167%; width:15.0781%;">What are the benefits of not providing signifiers?</div>
+    <div class="f48-cell" style="left:80.2344%; top:65.1389%; width:15.0781%;">Studies &amp; future work</div>
+
+    <!-- footer nav -->
+    <a class="btn f9-sm" style="left:42.6562%; top:93.0556%; width:5.7031%;" href="#" data-go="frame30">Previous</a>
+    <a class="btn f9-sm" style="left:49.4531%; top:93.0556%; width:5.7031%;" href="#" data-go="frame31">Next</a>
+    <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 23</div>
+  </section>
+
 <script>
   /* ---- simple frame navigation ---- */
-  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30"];
+  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48"];
   let cur = 0;
 
   function showFrame(id) {
