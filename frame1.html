@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nicole Portfolio — Frame 1 (Cover)</title>
+
+<!-- Figma uses Roboto; load it for fidelity (Arial is the metric fallback). -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+  /* ==================================================================
+     FRAME 1 — COVER
+     Faithfully rebuilt from Figma
+       file:  TERQLzNDHMPKXWjSLUTy40  ("Nicole Portfolio")
+       node:  3:2  ("Frame 1")  —  1280 x 720
+     Every coordinate, font, size and colour below is the EXACT value
+     read from the Figma file via the API.
+
+     Content is FULLY EDITABLE and SEPARATED:
+       • Text  -> the .portfolio / .name / .role / .next elements below
+       • Eye   -> the real Figma vector, exported as inline <svg>
+     There is NO flattened background image.
+     ================================================================== */
+
+  :root {
+    --navy:       #041540;  /* frame background          (Figma frame fill)   */
+    --gold:       #E1C05F;  /* PORTFOLIO + eye artwork                         */
+    --white:      #FFFFFF;  /* name line                                       */
+    --periwinkle: #A3BDFF;  /* "Senior UX Researcher"   (char-style override)  */
+    --btn-stroke: #E0E2E7;  /* Next button border (rectangle fill is transparent in Figma) */
+  }
+
+  * { margin:0; padding:0; box-sizing:border-box; }
+
+  body {
+    background:#111;
+    font-family:"Roboto", Arial, "Helvetica Neue", sans-serif;
+    display:flex; justify-content:center; align-items:flex-start;
+    min-height:100vh; padding:24px;
+  }
+
+  /* Holds Figma's 1280x720 (16:9); scales down responsively. */
+  .frame {
+    position:relative;
+    width:1280px; max-width:100%;
+    aspect-ratio:1280 / 720;
+    background:var(--navy);          /* Figma frame fill #041540 */
+    overflow:hidden;
+    box-shadow:0 16px 64px rgba(0,0,0,0.6);
+    container-type:inline-size;      /* enables cqw text scaling */
+  }
+
+  /* ---- Eye illustration ("Face" group) — Figma @(651.1,0) 611x720 ---- */
+  .illustration {
+    position:absolute;
+    left:50.8672%; top:0;
+    width:47.7344%; height:100%;
+  }
+  .eye-art { display:block; width:100%; height:100%; }
+
+  /* ---- PORTFOLIO — @(54,234) box 555x106, Roboto 700 96px, centered ---- */
+  .portfolio {
+    position:absolute;
+    left:4.2188%; top:32.5000%;
+    width:43.3594%;
+    text-align:center;
+    color:var(--gold);
+    font-weight:700;
+    font-size:7.5000cqw;
+    line-height:1.171875;
+    white-space:nowrap;
+  }
+
+  /* ---- Name + role — @(94,394) box 475x86, Roboto 400, centered ----
+     Single Figma text node, two lines with a per-character style override
+     on the second line (24px / periwinkle). */
+  .name-block {
+    position:absolute;
+    left:7.3438%; top:54.7222%;
+    width:37.1094%;
+    text-align:center;
+    line-height:1.171875;
+  }
+  .name { display:block; color:var(--white);      font-weight:400; font-size:2.8125cqw; }
+  .role { display:block; color:var(--periwinkle); font-weight:400; font-size:1.8750cqw; }
+
+  /* ---- Next button ("Group 22") — @(275,534) 114x35, radius 6 ----
+     Figma "Rectangle 23": fill #D9D9D9 at opacity 0 (i.e. transparent),
+     1px #E0E2E7 border; "Next" text 12px white. */
+  .next {
+    position:absolute;
+    left:21.4844%; top:74.1667%;
+    width:8.9062%; height:4.8611%;
+    display:flex; align-items:center; justify-content:center;
+    background:transparent;
+    border:1px solid var(--btn-stroke);
+    border-radius:6px;
+    color:var(--white);
+    font-weight:400;
+    font-size:0.9375cqw;
+    text-decoration:none;
+    cursor:pointer;
+  }
+  .next:hover { background:rgba(255,255,255,0.12); }
+</style>
+</head>
+<body>
+  <div class="frame">
+
+    <!-- RIGHT: real Figma eye illustration (inline vector) -->
+    <div class="illustration">
+      <svg viewBox="0 0 611 720" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg" class="eye-art" aria-label="Stylised eye illustration">
+<g clip-path="url(#clip0_7_79)">
+<path d="M0 0C0 0 396.799 0 415.914 0C448.788 10.2039 506.641 112.89 510.058 218.392C570.035 335.298 517.722 468.549 556.691 613.621C582.178 546.256 565.602 466.61 556.691 433.413C629.781 431.704 594.598 569.25 609.881 628.396C610.158 666.349 596.953 678.215 589.011 696.96C577.791 723.278 580.885 719.862 580.885 719.862H0V0Z" fill="white"/>
+</g>
+<g clip-path="url(#clip1_7_79)">
+<path d="M18.4688 201.954C30.381 164.555 224.163 113.535 361.893 133.943C443.525 154.351 474.09 191.75 477.507 218.945C443.478 212.158 435.398 168.941 360.185 166.263C282.386 168.433 190.181 198.583 190.181 198.583C190.181 198.583 18.4688 246.186 18.4688 202L18.4688 201.954Z" fill="#E1C05F"/>
+</g>
+<g clip-path="url(#clip2_7_79)">
+<path d="M406.126 426.856C282.248 297.668 89.7119 418.776 83.1094 474.274C92.9901 467.302 102.825 460.792 112.521 454.743L113.952 474.274C113.952 474.274 115.845 518.276 143.917 534.851C171.99 551.427 235.106 550.134 254.868 523.354C274.629 496.575 291.205 441.538 250.343 400.122C264.979 398.553 278.508 398.876 290.558 401.369C349.843 434.751 342.825 460.884 412.959 465.963C386.18 451.927 378.1 425.794 347.95 404.139C372.467 401.831 445.279 469.38 406.172 426.856H406.126Z" fill="#E1C05F"/>
+<path d="M94.0977 543.116C94.0977 543.116 158.784 552.258 194.198 552.027C254.452 551.889 284.925 529.403 322.97 522.708C296.375 538.822 241.57 561.585 193.551 561.585C166.818 561.354 115.152 557.753 94.0977 543.116Z" fill="#E1C05F"/>
+<path d="M223.887 467.349L223.748 460.146H217.977V453.774H212.252V447.402H220.886V435.952H209.389V444.217H204.171L204.125 453.774L190.597 454.097L177.023 453.774L176.976 444.217H172.729V435.952H161.878V447.402H168.896V453.774H163.171V460.146H157.446L157.261 467.349L150.428 467.81V492.835L156.799 492.697V479.907H165.711V499.392H171.944V485.817L190.597 485.725L209.25 485.817V499.392H194.706V504.147H209.389L209.25 499.392H215.437V479.907H224.395V492.697L230.766 492.835V467.81L223.887 467.349Z" fill="#162545"/>
+<path d="M186.395 499.392H171.943V504.193H186.395V499.392Z" fill="#162545"/>
+<path d="M180.763 464.625H172.637V472.751H180.763V464.625Z" fill="#FDFDFE"/>
+<path d="M208.511 464.625H200.385V472.751H208.511V464.625Z" fill="#F8F7F7"/>
+</g>
+<defs>
+<clipPath id="clip0_7_79">
+<rect width="609.881" height="720" fill="white"/>
+</clipPath>
+<clipPath id="clip1_7_79">
+<rect width="459.038" height="91.4659" fill="white" transform="translate(18.4688 129.28)"/>
+</clipPath>
+<clipPath id="clip2_7_79">
+<rect width="334.329" height="192.259" fill="white" transform="translate(83.1094 369.372)"/>
+</clipPath>
+</defs>
+</svg>
+    </div>
+
+    <!-- Editable text — change the words here -->
+    <h1 class="portfolio">PORTFOLIO</h1>
+
+    <div class="name-block">
+      <span class="name">Nicole Ke Chen PONG</span>
+      <span class="role">Senior UX Researcher</span>
+    </div>
+
+    <!-- Next button -> Frame 2 (Figma prototype dest 18:447) -->
+    <a class="next" href="#frame2">Next</a>
+
+  </div>
+</body>
+</html>
