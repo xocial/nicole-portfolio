@@ -402,6 +402,10 @@
   .f34-circ  { position:absolute; width:6.9531%; height:12.3611%; border-radius:50%; background:rgba(255,255,255,0.10); }
   .f34-clbl  { position:absolute; color:#00c2ff; font-weight:700; font-size:1.5625cqw; }
 
+  /* ================= FRAME 36 — Swipe (Research Q1 p5, Affordance) ================= */
+  .f36-head { position:absolute; color:var(--white); font-weight:700; font-size:1.875cqw; }
+  .f36-body { position:absolute; color:var(--white); font-weight:300; font-size:1.875cqw; line-height:1.4; }
+
   /* ================= FRAME 35 — Swipe (Research Q1 p4, 3 categories table) ================= */
   .f35-sub  { position:absolute; color:var(--white); font-weight:700; font-size:1.875cqw; }
   .f35-band { position:absolute; background:#263559; }
@@ -1616,6 +1620,41 @@
     <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 27</div>
   </section>
 
+  <!-- ================= FRAME 36 — Swipe-Revealed Hidden Widgets (Research Q1 p5, Affordance) ================= -->
+  <section class="frame" id="frame36" data-title="Frame 36 · Swipe Research Q1 — Affordance">
+    <div class="f-header">Q1: WHAT IS SIGNIFIER-LESS DESIGN (SLD)</div>
+
+    <!-- tab bar (Research active) -->
+    <div class="f9-tab" data-go="frame29" style="left:61.7188%; top:4.1667%; width:5.7031%; height:4.8611%;">Summary</div>
+    <div class="f9-tab" data-go="frame30" style="left:67.8906%; top:4.1667%; width:5.7031%; height:4.8611%;">Problem</div>
+    <div class="f9-tab" data-go="frame31" style="left:74.0625%; top:4.1667%; width:5.7031%; height:4.8611%;">Process</div>
+    <div class="f9-tab active"             style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
+    <div class="f9-tab" data-go="frame47" style="left:86.4063%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
+    <div class="f9-tab" data-go="frame49" style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
+
+    <!-- heading -->
+    <div class="f36-head" style="left:5.8594%; top:28.3333%;">AFFORDANCE</div>
+
+    <!-- definition (left column) -->
+    <div class="f36-body" style="left:5.8594%; top:38.8889%; width:38%;">An affordance is an action possibility formed by the relationship between an agent and its environment (Gibson 1977)</div>
+
+    <!-- diagram (right) -->
+    <img src="f36_diagram.png" alt="Affordance diagram"
+         style="position:absolute; left:62.8906%; top:27.6389%; width:21.4844%; height:42.3611%; object-fit:fill;">
+
+    <!-- diagram labels -->
+    <div class="f36-body" style="left:46.5625%; top:41.6667%;">Effecter Affordance</div>
+    <div class="f36-body" style="left:59.6094%; top:63.1944%;">Handling Affordance</div>
+
+    <!-- ghost "1" -->
+    <div style="position:absolute; left:85.2344%; top:65.2778%; color:#fff; opacity:0.20; font-weight:700; font-size:15.625cqw; line-height:1;">1</div>
+
+    <!-- footer nav -->
+    <a class="btn f9-sm" style="left:42.6562%; top:93.0556%; width:5.7031%;" href="#" data-go="frame35">Previous</a>
+    <a class="btn f9-sm" style="left:49.4531%; top:93.0556%; width:5.7031%;" href="#" data-go="frame37">Next</a>
+    <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 29</div>
+  </section>
+
   <!-- ================= FRAME 35 — Swipe-Revealed Hidden Widgets (Research Q1 p4, 3 categories of signs) ================= -->
   <section class="frame" id="frame35" data-title="Frame 35 · Swipe Research Q1 — 3 Categories of Signs">
     <div class="f-header">Q1: WHAT IS SIGNIFIER-LESS DESIGN (SLD)</div>
@@ -1835,7 +1874,7 @@
 
 <script>
   /* ---- simple frame navigation ---- */
-  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33", "frame34", "frame35"];
+  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33", "frame34", "frame35", "frame36"];
   let cur = 0;
 
   function showFrame(id) {
