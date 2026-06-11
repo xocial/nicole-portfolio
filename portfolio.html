@@ -402,6 +402,11 @@
   .f34-circ  { position:absolute; width:6.9531%; height:12.3611%; border-radius:50%; background:rgba(255,255,255,0.10); }
   .f34-clbl  { position:absolute; color:#00c2ff; font-weight:700; font-size:1.5625cqw; }
 
+  /* ================= FRAME 38 — Swipe (Research Q2, Model of Discovery) ================= */
+  .f38-title { position:absolute; color:var(--white); font-weight:700; font-size:1.875cqw; }
+  .f38-node  { position:absolute; color:#00c2ff; font-weight:700; font-size:2.3438cqw; }
+  .f38-body  { position:absolute; color:var(--white); font-weight:300; font-size:1.5625cqw; }
+
   /* ================= FRAME 37 — Swipe (Research Q1 p6, Affordance types table) ================= */
   .f37-title { position:absolute; color:var(--white); font-weight:700; font-size:1.875cqw; }
   .f37-col   { position:absolute; color:var(--white); font-weight:700; font-size:2.8125cqw; }
@@ -1627,6 +1632,63 @@
     <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 27</div>
   </section>
 
+  <!-- ================= FRAME 38 — Swipe-Revealed Hidden Widgets (Research Q2, Model of Discovery) ================= -->
+  <section class="frame" id="frame38" data-title="Frame 38 · Swipe Research Q2 — Model of Discovery">
+    <div class="f-header">Q2: HOW DO USERS DISCOVER SWHIDGETS IN THE SYSTEM?</div>
+
+    <!-- tab bar (Research active) -->
+    <div class="f9-tab" data-go="frame29" style="left:61.7188%; top:4.1667%; width:5.7031%; height:4.8611%;">Summary</div>
+    <div class="f9-tab" data-go="frame30" style="left:67.8906%; top:4.1667%; width:5.7031%; height:4.8611%;">Problem</div>
+    <div class="f9-tab" data-go="frame31" style="left:74.0625%; top:4.1667%; width:5.7031%; height:4.8611%;">Process</div>
+    <div class="f9-tab active"             style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
+    <div class="f9-tab" data-go="frame47" style="left:86.4063%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
+    <div class="f9-tab" data-go="frame49" style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
+
+    <!-- section title -->
+    <div class="f38-title" style="left:5.8594%; top:17.7778%;">MODEL OF DISCOVERY</div>
+
+    <!-- top node: current knowledge -->
+    <div class="f38-node" style="left:25.4688%; top:29.3056%;">CURRENT KNOWLEDGE &amp; SKILLS</div>
+    <div class="f38-body" style="left:36.5625%; top:35.6944%;">about the interface and the task</div>
+
+    <!-- arrows (all originate near y=299 in frame) -->
+    <!-- arrow 1: diagonal down-left → DESIGN MEANS -->
+    <img src="f38_arrow1.png" alt=""
+         style="position:absolute; left:26.7969%; top:41.5278%; width:11.6406%; height:27.7778%; object-fit:fill;">
+    <!-- arrow 2: diagonal down-right → MOTIVATIONS -->
+    <img src="f38_arrow2.png" alt=""
+         style="position:absolute; left:58.3594%; top:41.5278%; width:11.6406%; height:27.7778%; object-fit:fill;">
+    <!-- arrow 3: L-shape feedback, bottom → up-right -->
+    <img src="f38_arrow3.png" alt=""
+         style="position:absolute; left:33.4375%; top:41.5278%; width:14.1406%; height:32.2222%; object-fit:fill;">
+    <!-- arrow 4: L-shape feedback, bottom → up-left -->
+    <img src="f38_arrow4.png" alt=""
+         style="position:absolute; left:49.9219%; top:41.5278%; width:12.5%; height:32.2222%; object-fit:fill;">
+
+    <!-- arrow side-labels -->
+    <div class="f38-body" style="left:16.9531%; top:46.6667%;">affects the ability to understand</div>
+    <div class="f38-body" style="left:69.6094%; top:47.5%;">affects the strength of</div>
+
+    <!-- bottom-left node: DESIGN MEANS -->
+    <div class="f38-node" style="left:11.7969%; top:70.9722%;">DESIGN MEANS</div>
+    <div class="f38-body" style="left:11.7969%; top:77.2222%;">about the interface and the task</div>
+
+    <!-- bottom-center: both needed -->
+    <div class="f38-body" style="left:44.0625%; top:77.2222%;">Both needed to improve</div>
+
+    <!-- bottom-right node: MOTIVATIONS -->
+    <div class="f38-node" style="left:58.3594%; top:71.3889%;">MOTIVATIONS</div>
+    <div class="f38-body" style="left:58.3594%; top:77.2222%;">to learn (or not to)</div>
+
+    <!-- ghost "2" -->
+    <div style="position:absolute; left:85.2344%; top:65.2778%; color:#fff; opacity:0.20; font-weight:700; font-size:15.625cqw; line-height:1;">2</div>
+
+    <!-- footer nav -->
+    <a class="btn f9-sm" style="left:42.6562%; top:93.0556%; width:5.7031%;" href="#" data-go="frame37">Previous</a>
+    <a class="btn f9-sm" style="left:49.4531%; top:93.0556%; width:5.7031%;" href="#" data-go="frame39">Next</a>
+    <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 31</div>
+  </section>
+
   <!-- ================= FRAME 37 — Swipe-Revealed Hidden Widgets (Research Q1 p6, Affordance types table) ================= -->
   <section class="frame" id="frame37" data-title="Frame 37 · Swipe Research Q1 — SLD vs Affordance">
     <div class="f-header">Q1: WHAT IS SIGNIFIER-LESS DESIGN (SLD)</div>
@@ -1932,7 +1994,7 @@
 
 <script>
   /* ---- simple frame navigation ---- */
-  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33", "frame34", "frame35", "frame36", "frame37"];
+  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33", "frame34", "frame35", "frame36", "frame37", "frame38"];
   let cur = 0;
 
   function showFrame(id) {
