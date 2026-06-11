@@ -402,6 +402,13 @@
   .f34-circ  { position:absolute; width:6.9531%; height:12.3611%; border-radius:50%; background:rgba(255,255,255,0.10); }
   .f34-clbl  { position:absolute; color:#00c2ff; font-weight:700; font-size:1.5625cqw; }
 
+  /* ================= FRAME 37 — Swipe (Research Q1 p6, Affordance types table) ================= */
+  .f37-title { position:absolute; color:var(--white); font-weight:700; font-size:1.875cqw; }
+  .f37-col   { position:absolute; color:var(--white); font-weight:700; font-size:2.8125cqw; }
+  .f37-lbl   { position:absolute; color:#00c2ff; font-weight:700; font-size:1.5625cqw; }
+  .f37-cell  { position:absolute; color:var(--white); font-weight:300; font-size:1.5625cqw; line-height:1.4; }
+  .f37-band  { position:absolute; background:#263559; }
+
   /* ================= FRAME 36 — Swipe (Research Q1 p5, Affordance) ================= */
   .f36-head { position:absolute; color:var(--white); font-weight:700; font-size:1.875cqw; }
   .f36-body { position:absolute; color:var(--white); font-weight:300; font-size:1.875cqw; line-height:1.4; }
@@ -1620,6 +1627,57 @@
     <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 27</div>
   </section>
 
+  <!-- ================= FRAME 37 — Swipe-Revealed Hidden Widgets (Research Q1 p6, Affordance types table) ================= -->
+  <section class="frame" id="frame37" data-title="Frame 37 · Swipe Research Q1 — SLD vs Affordance">
+    <div class="f-header">Q1: WHAT IS SIGNIFIER-LESS DESIGN (SLD)</div>
+
+    <!-- tab bar (Research active) -->
+    <div class="f9-tab" data-go="frame29" style="left:61.7188%; top:4.1667%; width:5.7031%; height:4.8611%;">Summary</div>
+    <div class="f9-tab" data-go="frame30" style="left:67.8906%; top:4.1667%; width:5.7031%; height:4.8611%;">Problem</div>
+    <div class="f9-tab" data-go="frame31" style="left:74.0625%; top:4.1667%; width:5.7031%; height:4.8611%;">Process</div>
+    <div class="f9-tab active"             style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
+    <div class="f9-tab" data-go="frame47" style="left:86.4063%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
+    <div class="f9-tab" data-go="frame49" style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
+
+    <!-- title -->
+    <div class="f37-title" style="left:5.8594%; top:17.7778%;">TYPES OF SIGNIFIER-LESS DESIGN VS AFFORANCE</div>
+
+    <!-- swipe illustrations (screenshots + hand gestures + arrows) -->
+    <img src="f37_illus.png" alt="Swipe gesture illustrations"
+         style="position:absolute; left:20%; top:23.6111%; width:49.2969%; height:33.1944%; object-fit:fill;">
+
+    <!-- column headers -->
+    <div class="f37-col" style="left:27.5781%; top:59.1667%;">System</div>
+    <div class="f37-col" style="left:45.4688%; top:59.1667%;">View</div>
+    <div class="f37-col" style="left:63.125%;  top:59.1667%;">Item</div>
+
+    <!-- row-label column header -->
+    <div class="f37-lbl" style="left:6.9531%; top:61.1111%;">Category</div>
+
+    <!-- dark table band -->
+    <div class="f37-band" style="left:4.5313%; top:67.7778%; width:78.6719%; height:22.5%;"></div>
+
+    <!-- row 1: Handling affordance -->
+    <div class="f37-lbl"  style="left:6.9531%;  top:71.3889%;">Handling affordance</div>
+    <div class="f37-cell" style="left:27.5781%; top:71.3889%; width:17.7344%;">swipe through bezels</div>
+    <div class="f37-cell" style="left:45.4688%; top:71.3889%; width:17.5%;">swipe to drag the view</div>
+    <div class="f37-cell" style="left:63.125%;  top:71.3889%; width:20%;">swipe to drag the item</div>
+
+    <!-- row 2: Effecter affordance -->
+    <div class="f37-lbl"  style="left:6.9531%;  top:80.6944%;">Effecter affordance</div>
+    <div class="f37-cell" style="left:27.5781%; top:80.6944%; width:17.7344%;">system-wide functions</div>
+    <div class="f37-cell" style="left:45.4688%; top:80.6944%; width:17.5%;">related to the objects in the view</div>
+    <div class="f37-cell" style="left:63.125%;  top:80.6944%; width:20%;">commands acting on the item</div>
+
+    <!-- ghost "1" -->
+    <div style="position:absolute; left:85.2344%; top:65.2778%; color:#fff; opacity:0.20; font-weight:700; font-size:15.625cqw; line-height:1;">1</div>
+
+    <!-- footer nav -->
+    <a class="btn f9-sm" style="left:42.6562%; top:93.0556%; width:5.7031%;" href="#" data-go="frame36">Previous</a>
+    <a class="btn f9-sm" style="left:49.4531%; top:93.0556%; width:5.7031%;" href="#" data-go="frame38">Next</a>
+    <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 30</div>
+  </section>
+
   <!-- ================= FRAME 36 — Swipe-Revealed Hidden Widgets (Research Q1 p5, Affordance) ================= -->
   <section class="frame" id="frame36" data-title="Frame 36 · Swipe Research Q1 — Affordance">
     <div class="f-header">Q1: WHAT IS SIGNIFIER-LESS DESIGN (SLD)</div>
@@ -1874,7 +1932,7 @@
 
 <script>
   /* ---- simple frame navigation ---- */
-  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33", "frame34", "frame35", "frame36"];
+  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33", "frame34", "frame35", "frame36", "frame37"];
   let cur = 0;
 
   function showFrame(id) {
