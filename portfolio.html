@@ -402,6 +402,14 @@
   .f34-circ  { position:absolute; width:6.9531%; height:12.3611%; border-radius:50%; background:rgba(255,255,255,0.10); }
   .f34-clbl  { position:absolute; color:#00c2ff; font-weight:700; font-size:1.5625cqw; }
 
+  /* ================= FRAME 35 — Swipe (Research Q1 p4, 3 categories table) ================= */
+  .f35-sub  { position:absolute; color:var(--white); font-weight:700; font-size:1.875cqw; }
+  .f35-band { position:absolute; background:#263559; }
+  .f35-hdr  { position:absolute; color:#00c2ff; font-weight:700; font-size:1.5625cqw; }
+  .f35-row  { position:absolute; color:var(--white); font-weight:300; font-size:1.5625cqw; line-height:1.35; }
+  .f35-cell { position:absolute; color:var(--white); font-weight:300; font-size:1.5625cqw; line-height:1.4; }
+  .f35-div  { position:absolute; height:4px; background:#263559; }
+
   /* ================= FRAME 33 — Swipe (Research Q1 p2, screenshot + logos) ================= */
   .f33-panel { position:absolute; left:0; top:12.2222%; width:100%; height:78.3333%; background:#ffffff; }
   .f33-title { position:absolute; color:#041540; font-weight:700; font-size:1.7188cqw; line-height:1.35; }
@@ -1608,6 +1616,69 @@
     <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 27</div>
   </section>
 
+  <!-- ================= FRAME 35 — Swipe-Revealed Hidden Widgets (Research Q1 p4, 3 categories of signs) ================= -->
+  <section class="frame" id="frame35" data-title="Frame 35 · Swipe Research Q1 — 3 Categories of Signs">
+    <div class="f-header">Q1: WHAT IS SIGNIFIER-LESS DESIGN (SLD)</div>
+
+    <!-- tab bar (Research active) -->
+    <div class="f9-tab" data-go="frame29" style="left:61.7188%; top:4.1667%; width:5.7031%; height:4.8611%;">Summary</div>
+    <div class="f9-tab" data-go="frame30" style="left:67.8906%; top:4.1667%; width:5.7031%; height:4.8611%;">Problem</div>
+    <div class="f9-tab" data-go="frame31" style="left:74.0625%; top:4.1667%; width:5.7031%; height:4.8611%;">Process</div>
+    <div class="f9-tab active"             style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
+    <div class="f9-tab" data-go="frame47" style="left:86.4063%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
+    <div class="f9-tab" data-go="frame49" style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
+
+    <!-- subtitle -->
+    <div class="f35-sub" style="left:5.8594%; top:17.7778%;">3 CATEGORIES OF SIGNS</div>
+
+    <!-- table header band -->
+    <div class="f35-band" style="left:5.8594%; top:24.8611%; width:77.2656%; height:10.8333%;"></div>
+
+    <!-- column headers (cyan) -->
+    <div class="f35-hdr" style="left:7.0313%; top:28.1944%;">Category</div>
+    <div class="f35-hdr" style="left:28.5938%; top:28.1944%;">Icon</div>
+    <div class="f35-hdr" style="left:44.6875%; top:28.1944%;">Index</div>
+    <div class="f35-hdr" style="left:65.1563%; top:28.1944%;">Symbol</div>
+
+    <!-- row labels (category column) -->
+    <div class="f35-row" style="left:7.0313%; top:39.5833%; width:17.1875%;">Principle</div>
+    <div class="f35-row" style="left:7.0313%; top:57.2222%; width:17.1875%;">Example<br>on physical products</div>
+    <div class="f35-row" style="left:7.0313%; top:75%; width:17.1875%;">Example<br>on digital products</div>
+
+    <!-- principle descriptions (data cells) -->
+    <div class="f35-cell" style="left:25.9375%; top:39.5833%; width:18.75%;">The sign reflects the everyday object</div>
+    <div class="f35-cell" style="left:44.6875%; top:39.5833%; width:18.5156%;">The sign indicates the relationship between object and context</div>
+    <div class="f35-cell" style="left:63.2031%; top:39.5833%; width:19.9219%;">The sign is without the principle of neither icon nor index. It requires learning first</div>
+
+    <!-- horizontal dividers -->
+    <div class="f35-div" style="left:5.8594%; top:53.6111%; width:77.2656%;"></div>
+    <div class="f35-div" style="left:5.8594%; top:69.8611%; width:77.2656%;"></div>
+
+    <!-- physical product screenshots -->
+    <img src="f35_phys_icon.png" alt="Physical product: Icon"
+         style="position:absolute; left:27.1094%; top:54.8611%; width:12.2656%; height:14.3056%; object-fit:fill;">
+    <img src="f35_phys_index.png" alt="Physical product: Index"
+         style="position:absolute; left:46.0156%; top:54.7222%; width:12.5%; height:14.4444%; object-fit:fill;">
+    <img src="f35_phys_sym.png" alt="Physical product: Symbol"
+         style="position:absolute; left:66.4844%; top:54.7222%; width:12.5%; height:14.5833%; object-fit:fill;">
+
+    <!-- digital product icons -->
+    <img src="f35_digi_icon.png" alt="Digital product: Icon"
+         style="position:absolute; left:31.6406%; top:75.6944%; width:3.2813%; height:5.8333%; object-fit:fill;">
+    <img src="f35_digi_index.png" alt="Digital product: Index"
+         style="position:absolute; left:50.5469%; top:75.4167%; width:2.8125%; height:6.25%; object-fit:fill;">
+    <img src="f35_digi_sym.png" alt="Digital product: Symbol"
+         style="position:absolute; left:71.0156%; top:75.5556%; width:3.4375%; height:5.1389%; object-fit:fill;">
+
+    <!-- ghost "1" -->
+    <div style="position:absolute; left:85.2344%; top:65.2778%; color:#fff; opacity:0.20; font-weight:700; font-size:15.625cqw; line-height:1;">1</div>
+
+    <!-- footer nav -->
+    <a class="btn f9-sm" style="left:42.6562%; top:93.0556%; width:5.7031%;" href="#" data-go="frame34">Previous</a>
+    <a class="btn f9-sm" style="left:49.4531%; top:93.0556%; width:5.7031%;" href="#" data-go="frame36">Next</a>
+    <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 28</div>
+  </section>
+
   <!-- ================= FRAME 33 — Swipe-Revealed Hidden Widgets (Research Q1 p2) ================= -->
   <section class="frame" id="frame33" data-title="Frame 33 · Swipe-Revealed Hidden Widgets Research Q1 p2">
     <div class="f-header">Q1: WHAT IS SIGNIFIER-LESS DESIGN (SLD)</div>
@@ -1764,7 +1835,7 @@
 
 <script>
   /* ---- simple frame navigation ---- */
-  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33", "frame34"];
+  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33", "frame34", "frame35"];
   let cur = 0;
 
   function showFrame(id) {
