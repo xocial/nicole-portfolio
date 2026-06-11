@@ -395,6 +395,11 @@
   .f28-col p { margin:0 0 0.7em; }
   .f28-col b { font-weight:600; }
 
+  /* ================= FRAME 33 — Swipe (Research Q1 p2, screenshot + logos) ================= */
+  .f33-panel { position:absolute; left:0; top:12.2222%; width:100%; height:78.3333%; background:#ffffff; }
+  .f33-title { position:absolute; color:#041540; font-weight:700; font-size:1.7188cqw; line-height:1.35; }
+  .f33-caption { position:absolute; color:#041540; font-weight:400; font-size:0.625cqw; }
+
   /* ================= FRAME 32 — Swipe (Research Q1) ================= */
   .f32-block { position:absolute; font-size:1.7188cqw; line-height:1.5; }
   .f32-block .h { display:block; color:var(--gold); font-weight:700; margin-bottom:0.5em; }
@@ -1545,6 +1550,37 @@
     <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 22</div>
   </section>
 
+  <!-- ================= FRAME 33 — Swipe-Revealed Hidden Widgets (Research Q1 p2) ================= -->
+  <section class="frame" id="frame33" data-title="Frame 33 · Swipe-Revealed Hidden Widgets Research Q1 p2">
+    <div class="f-header">Q1: WHAT IS SIGNIFIER-LESS DESIGN (SLD)</div>
+
+    <!-- section tab bar (Research active) -->
+    <div class="f9-tab" data-go="frame29" style="left:61.7188%; top:4.1667%; width:5.7031%; height:4.8611%;">Summary</div>
+    <div class="f9-tab" data-go="frame30" style="left:67.8906%; top:4.1667%; width:5.7031%; height:4.8611%;">Problem</div>
+    <div class="f9-tab" data-go="frame31" style="left:74.0625%; top:4.1667%; width:5.7031%; height:4.8611%;">Process</div>
+    <div class="f9-tab active"             style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
+    <div class="f9-tab" data-go="frame47" style="left:86.4063%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
+    <div class="f9-tab" data-go="frame49" style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
+
+    <!-- white content panel -->
+    <div class="f33-panel"></div>
+
+    <!-- left: swipe screenshot -->
+    <img src="f33_swipe2.png" alt="Swipe-to-delete screenshot examples"
+         style="position:absolute; left:0; top:12.2222%; width:61.3281%; height:78.3333%; object-fit:fill;">
+
+    <!-- right: title + logos -->
+    <div class="f33-title" style="left:66.5625%; top:21.8056%; width:26.3281%;">The existence of swipe-revealed hidden widgets (SWIDGET) in the commercial products</div>
+    <img src="f33_logos.png" alt="Logos: iOS, macOS, Android, Gmail, WhatsApp"
+         style="position:absolute; left:66.5625%; top:42.2222%; width:25.625%; height:32.2222%; object-fit:fill;">
+    <div class="f33-caption" style="left:67.0313%; top:85.6944%;">Image source: LINK</div>
+
+    <!-- footer nav -->
+    <a class="btn f9-sm" style="left:42.6562%; top:93.0556%; width:5.7031%;" href="#" data-go="frame32">Previous</a>
+    <a class="btn f9-sm" style="left:49.4531%; top:93.0556%; width:5.7031%;" href="#" data-go="frame34">Next</a>
+    <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 26</div>
+  </section>
+
   <!-- ================= FRAME 32 — Swipe-Revealed Hidden Widgets (Research Q1) ================= -->
   <section class="frame" id="frame32" data-title="Frame 32 · Swipe-Revealed Hidden Widgets Research Q1">
     <div class="f-header">Q1: WHAT IS SIGNIFIER-LESS DESIGN (SLD)</div>
@@ -1670,7 +1706,7 @@
 
 <script>
   /* ---- simple frame navigation ---- */
-  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32"];
+  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33"];
   let cur = 0;
 
   function showFrame(id) {
