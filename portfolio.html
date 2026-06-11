@@ -395,6 +395,11 @@
   .f28-col p { margin:0 0 0.7em; }
   .f28-col b { font-weight:600; }
 
+  /* ================= FRAME 32 — Swipe (Research Q1) ================= */
+  .f32-block { position:absolute; font-size:1.7188cqw; line-height:1.5; }
+  .f32-block .h { display:block; color:var(--gold); font-weight:700; margin-bottom:0.5em; }
+  .f32-block b { font-weight:700; }
+
   /* ================= FRAME 31 — Swipe (Process) ================= */
   .f31-loband { position:absolute; left:0; top:67.2222%; width:100%; height:32.7778%; background:#263559; }
 
@@ -1540,6 +1545,39 @@
     <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 22</div>
   </section>
 
+  <!-- ================= FRAME 32 — Swipe-Revealed Hidden Widgets (Research Q1) ================= -->
+  <section class="frame" id="frame32" data-title="Frame 32 · Swipe-Revealed Hidden Widgets Research Q1">
+    <div class="f-header">Q1: WHAT IS SIGNIFIER-LESS DESIGN (SLD)</div>
+
+    <!-- section tab bar (Research active) -->
+    <div class="f9-tab" data-go="frame29" style="left:61.7188%; top:4.1667%; width:5.7031%; height:4.8611%;">Summary</div>
+    <div class="f9-tab" data-go="frame30" style="left:67.8906%; top:4.1667%; width:5.7031%; height:4.8611%;">Problem</div>
+    <div class="f9-tab" data-go="frame31" style="left:74.0625%; top:4.1667%; width:5.7031%; height:4.8611%;">Process</div>
+    <div class="f9-tab active"             style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
+    <div class="f9-tab" data-go="frame47" style="left:86.4063%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
+    <div class="f9-tab" data-go="frame49" style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
+
+    <!-- ghost "1" background number -->
+    <div style="position:absolute; left:85.2344%; top:65.2778%; color:#fff; opacity:0.20; font-weight:700; font-size:15.625cqw; line-height:1;">1</div>
+
+    <!-- Definition block (left) -->
+    <div class="f32-block" style="left:9.2188%; top:36.6667%; width:31.4844%;">
+      <span class="h">Definition</span>
+      <span style="color:#dcdad4; font-weight:300;">&#xAB; Interface designs in which some interaction possibilities are <b>not directly signified</b> to users when they need it. &#xBB;</span>
+    </div>
+
+    <!-- Characteristics block (right) -->
+    <div class="f32-block" style="left:55.1563%; top:36.6667%; width:41.0938%;">
+      <span class="h">Characteristics</span>
+      <span style="color:#ffffff; font-weight:300;">It&rsquo;s a sign that has been hidden<br>users are supposed to figure it out<br>after discovery, users can create a logic of usage</span>
+    </div>
+
+    <!-- footer nav -->
+    <a class="btn f9-sm" style="left:42.6562%; top:93.0556%; width:5.7031%;" href="#" data-go="frame31">Previous</a>
+    <a class="btn f9-sm" style="left:49.4531%; top:93.0556%; width:5.7031%;" href="#" data-go="frame33">Next</a>
+    <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 25</div>
+  </section>
+
   <!-- ================= FRAME 31 — Swipe-Revealed Hidden Widgets (Process) ================= -->
   <section class="frame" id="frame31" data-title="Frame 31 · Swipe-Revealed Hidden Widgets Process">
     <div class="f31-loband"></div>
@@ -1632,7 +1670,7 @@
 
 <script>
   /* ---- simple frame navigation ---- */
-  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31"];
+  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32"];
   let cur = 0;
 
   function showFrame(id) {
