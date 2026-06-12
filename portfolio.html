@@ -1745,25 +1745,29 @@
     <div class="f9-tab" data-go="frame49" style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
     <!-- section title -->
     <div class="f40-title" style="left:5.8594%; top:17.7778%;">DEGREE OF KNOWLEDGE</div>
-    <!-- concentric circles: fill opacity from Figma (20% / 60% / 100% / 100%) -->
-    <div class="f40-circle" style="left:20.7813%; top:35.4167%; width:56.0938%; height:99.7222%; background:rgba(255,255,255,0.20);"></div>
-    <div class="f40-circle" style="left:27.5977%; top:47.5417%; width:42.4531%; height:75.4722%; background:rgba(255,255,255,0.60);"></div>
-    <div class="f40-circle" style="left:34.1641%; top:59.2083%; width:29.3281%; height:52.1389%; background:#dcdad4;"></div>
-    <div class="f40-circle" style="left:40.1328%; top:69.8194%; width:17.3906%; height:30.9167%; background:#e1c05f;"></div>
-    <!-- ring text labels -->
-    <div class="f40-ring-label" style="left:42.8125%; top:39.7222%; width:12.0313%; color:#ffffff;">Unknown</div>
-    <div class="f40-ring-label" style="left:42.8125%; top:52.5%;    width:12.0313%; color:#041540;">Receptive</div>
-    <div class="f40-ring-label" style="left:42.8125%; top:64.0278%; width:12.0313%; color:#041540;">Productive</div>
-    <div class="f40-ring-label" style="left:42.8125%; top:76.9444%; width:12.0313%; color:#041540;">Primary</div>
-    <!-- L-axis lines: horizontal=dashed [6,6] Figma units → 0.469cqw; vertical=solid -->
+    <!-- concentric circles: wrapper ensures clipping; cqw (px/1280×100) for top/height -->
+    <div style="position:absolute; inset:0; overflow:hidden; pointer-events:none;">
+      <div class="f40-circle" style="left:20.7813%; top:19.9219cqw; width:56.0938%; height:56.0938cqw; background:rgba(255,255,255,0.20);"></div>
+      <div class="f40-circle" style="left:27.5977%; top:26.7422cqw; width:42.4531%; height:42.4531cqw; background:rgba(255,255,255,0.60);"></div>
+      <div class="f40-circle" style="left:34.1641%; top:33.3047cqw; width:29.3281%; height:29.3281cqw; background:#dcdad4;"></div>
+      <div class="f40-circle" style="left:40.1328%; top:39.2734cqw; width:17.3906%; height:17.3906cqw; background:#e1c05f;"></div>
+    </div>
+    <!-- ring text labels (positioned within frame, not clipped) -->
+    <div class="f40-ring-label" style="left:42.8125%; top:22.3438cqw; width:12.0313%; color:#ffffff;">Unknown</div>
+    <div class="f40-ring-label" style="left:42.8125%; top:29.5313cqw; width:12.0313%; color:#041540;">Receptive</div>
+    <div class="f40-ring-label" style="left:42.8125%; top:36.0156cqw; width:12.0313%; color:#041540;">Productive</div>
+    <div class="f40-ring-label" style="left:42.8125%; top:43.2813cqw; width:12.0313%; color:#041540;">Primary</div>
+    <!-- L-axis lines: horizontal=dashed [6,6] px → 0.469cqw; vertical=solid with arrowhead at end -->
     <!-- Arrow 3 horizontal outer dashed: (146,342)→(625,342) -->
-    <div style="position:absolute; left:11.4063%; top:47.5%; width:37.4219%; height:0.2778%; background:repeating-linear-gradient(90deg,#00c1ff 0,#00c1ff 0.469cqw,transparent 0.469cqw,transparent 0.9375cqw);"></div>
-    <!-- Arrow 1 vertical outer solid: (146,342)→(146,614) -->
-    <div style="position:absolute; left:11.4063%; top:47.5%;     width:0.2344%;  height:37.7778%; background:#00c1ff;"></div>
+    <div style="position:absolute; left:11.4063%; top:26.7188cqw; width:37.4219%; height:0.2344cqw; background:repeating-linear-gradient(90deg,#00c1ff 0,#00c1ff 0.469cqw,transparent 0.469cqw,transparent 0.9375cqw);"></div>
+    <!-- Arrow 1 vertical outer solid: (146,342)→(146,614) + arrowhead pointing down -->
+    <div style="position:absolute; left:11.3672%; top:26.7188cqw; width:0.2344cqw; height:21.2500cqw; background:#00c1ff;"></div>
+    <div style="position:absolute; left:calc(11.4063% - 0.8594cqw); top:47.9688cqw; width:0; height:0; border-left:0.8594cqw solid transparent; border-right:0.8594cqw solid transparent; border-top:0.8594cqw solid #00c1ff;"></div>
     <!-- Arrow 4 horizontal inner dashed: (262,426)→(625,426) -->
-    <div style="position:absolute; left:20.4688%; top:59.1667%; width:28.3594%; height:0.2778%; background:repeating-linear-gradient(90deg,#00c1ff 0,#00c1ff 0.469cqw,transparent 0.469cqw,transparent 0.9375cqw);"></div>
-    <!-- Arrow 2 vertical inner solid: (262,426)→(262,614) -->
-    <div style="position:absolute; left:20.4688%; top:59.1667%;  width:0.2344%;  height:26.1111%; background:#00c1ff;"></div>
+    <div style="position:absolute; left:20.4688%; top:33.2813cqw; width:28.3594%; height:0.2344cqw; background:repeating-linear-gradient(90deg,#00c1ff 0,#00c1ff 0.469cqw,transparent 0.469cqw,transparent 0.9375cqw);"></div>
+    <!-- Arrow 2 vertical inner solid: (262,426)→(262,614) + arrowhead pointing down -->
+    <div style="position:absolute; left:20.4297%; top:33.2813cqw; width:0.2344cqw; height:14.6875cqw; background:#00c1ff;"></div>
+    <div style="position:absolute; left:calc(20.4688% - 0.8594cqw); top:47.9688cqw; width:0; height:0; border-left:0.8594cqw solid transparent; border-right:0.8594cqw solid transparent; border-top:0.8594cqw solid #00c1ff;"></div>
     <!-- axis labels -->
     <div class="f40-axis-label" style="left:2.6563%;  top:63.0556%; width:8.2031%;">Aware</div>
     <div class="f40-axis-label" style="left:12.2656%; top:69.8611%; width:8.2031%;">Used</div>
