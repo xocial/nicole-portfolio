@@ -411,6 +411,12 @@
   .f39-title { position:absolute; color:var(--white); font-weight:700; font-size:1.875cqw; }
   .f39-label { position:absolute; color:#00c1ff; font-weight:700; font-size:2.3438cqw; text-align:center; }
 
+  /* ================= FRAME 40 — Swipe Research Q2: Degree of Knowledge ================= */
+  .f40-title      { position:absolute; color:var(--white); font-weight:700; font-size:1.875cqw; }
+  .f40-circle     { position:absolute; border-radius:50%; }
+  .f40-ring-label { position:absolute; font-weight:700; font-size:2.3438cqw; text-align:center; }
+  .f40-axis-label { position:absolute; color:#00c1ff; font-weight:700; font-size:2.3438cqw; text-align:center; }
+
   /* ================= FRAME 37 — Swipe (Research Q1 p6, Affordance types table) ================= */
   .f37-title { position:absolute; color:var(--white); font-weight:700; font-size:1.875cqw; }
   .f37-col   { position:absolute; color:var(--white); font-weight:700; font-size:2.8125cqw; }
@@ -1727,6 +1733,48 @@
     <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 32</div>
   </section>
 
+  <!-- ================= FRAME 40 — Swipe Research Q2: Degree of Knowledge ================= -->
+  <section class="frame" id="frame40" data-title="Frame 40 · Swipe Research Q2 — Degree of Knowledge">
+    <div class="f-header">Q2: HOW DO USERS DISCOVER SWHIDGETS IN THE SYSTEM?</div>
+    <!-- tab bar (Research active) -->
+    <div class="f9-tab" data-go="frame29" style="left:61.7188%; top:4.1667%; width:5.7031%; height:4.8611%;">Summary</div>
+    <div class="f9-tab" data-go="frame30" style="left:67.8906%; top:4.1667%; width:5.7031%; height:4.8611%;">Problem</div>
+    <div class="f9-tab" data-go="frame31" style="left:74.0625%; top:4.1667%; width:5.7031%; height:4.8611%;">Process</div>
+    <div class="f9-tab active"             style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
+    <div class="f9-tab" data-go="frame47" style="left:86.4141%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
+    <div class="f9-tab" data-go="frame49" style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
+    <!-- section title -->
+    <div class="f40-title" style="left:5.8594%; top:17.7778%;">DEGREE OF KNOWLEDGE</div>
+    <!-- concentric circles: all centered at (625,614); overflow clipped by .frame -->
+    <div class="f40-circle" style="left:20.7813%; top:35.4167%; width:56.0938%; height:99.7222%; background:#ffffff;"></div>
+    <div class="f40-circle" style="left:27.5977%; top:47.5417%; width:42.4531%; height:75.4722%; background:#ffffff;"></div>
+    <div class="f40-circle" style="left:34.1641%; top:59.2083%; width:29.3281%; height:52.1389%; background:#dcdad4;"></div>
+    <div class="f40-circle" style="left:40.1328%; top:69.8194%; width:17.3906%; height:30.9167%; background:#e1c05f;"></div>
+    <!-- ring text labels -->
+    <div class="f40-ring-label" style="left:42.8125%; top:39.7222%; width:12.0313%; color:#ffffff;">Unknown</div>
+    <div class="f40-ring-label" style="left:42.8125%; top:52.5%;    width:12.0313%; color:#041540;">Receptive</div>
+    <div class="f40-ring-label" style="left:42.8125%; top:64.0278%; width:12.0313%; color:#041540;">Productive</div>
+    <div class="f40-ring-label" style="left:42.8125%; top:76.9444%; width:12.0313%; color:#041540;">Primary</div>
+    <!-- L-axis lines (sw=2 horizontal, sw=3 vertical) -->
+    <!-- Arrow 3 horizontal outer: (146,342)→(625,342) -->
+    <div style="position:absolute; left:11.4063%; top:47.5%;     width:37.4219%; height:0.2778%; background:#00c1ff;"></div>
+    <!-- Arrow 1 vertical outer:   (146,342)→(146,614) -->
+    <div style="position:absolute; left:11.4063%; top:47.5%;     width:0.2344%;  height:37.7778%; background:#00c1ff;"></div>
+    <!-- Arrow 4 horizontal inner: (262,426)→(625,426) -->
+    <div style="position:absolute; left:20.4688%; top:59.1667%;  width:28.3594%; height:0.2778%; background:#00c1ff;"></div>
+    <!-- Arrow 2 vertical inner:   (262,426)→(262,614) -->
+    <div style="position:absolute; left:20.4688%; top:59.1667%;  width:0.2344%;  height:26.1111%; background:#00c1ff;"></div>
+    <!-- axis labels -->
+    <div class="f40-axis-label" style="left:2.6563%;  top:63.0556%; width:8.2031%;">Aware</div>
+    <div class="f40-axis-label" style="left:12.2656%; top:69.8611%; width:8.2031%;">Used</div>
+    <!-- ghost "2" -->
+    <div style="position:absolute; left:85.2344%; top:65.2778%; color:#fff; opacity:0.20; font-weight:700; font-size:15.625cqw; line-height:1;">2</div>
+    <!-- footer nav -->
+    <a class="btn f9-sm" style="left:42.6563%; top:93.0556%; width:5.7031%;" href="#" data-go="frame39">Previous</a>
+    <a class="btn f9-sm" style="left:49.4531%; top:93.0556%; width:5.7031%;" href="#" data-go="frame41">Next</a>
+    <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 33</div>
+  </section>
+
   <!-- ================= FRAME 37 — Swipe-Revealed Hidden Widgets (Research Q1 p6, Affordance types table) ================= -->
   <section class="frame" id="frame37" data-title="Frame 37 · Swipe Research Q1 — SLD vs Affordance">
     <div class="f-header">Q1: WHAT IS SIGNIFIER-LESS DESIGN (SLD)</div>
@@ -2041,7 +2089,7 @@
 
 <script>
   /* ---- simple frame navigation ---- */
-  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33", "frame34", "frame35", "frame36", "frame37", "frame38", "frame39"];
+  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33", "frame34", "frame35", "frame36", "frame37", "frame38", "frame39", "frame40"];
   let cur = 0;
 
   function showFrame(id) {
