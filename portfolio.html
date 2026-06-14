@@ -1834,11 +1834,15 @@
     <div class="f9-tab active"             style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
     <div class="f9-tab" data-go="frame47" style="left:86.4141%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
     <div class="f9-tab" data-go="frame49" style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
-    <!-- legend: cyan = lab study, pink = online study -->
-    <div style="position:absolute; left:31.25%; top:27.3611%; width:3.125%; height:3.125cqw; background:#8bfdff;"></div>
-    <div class="f42-head" style="left:34.375%; top:28.75%;">LAB STUDY</div>
-    <div style="position:absolute; left:51.5625%; top:27.3611%; width:3.125%; height:3.125cqw; background:#ffdad9;"></div>
-    <div class="f42-head" style="left:54.6875%; top:28.75%;">ONLINE STUDY</div>
+    <!-- legend: centred within Notification Center and SMS section columns -->
+    <div style="position:absolute; left:31.1719%; top:27.3611%; width:19.5313%; height:3.125cqw; display:flex; align-items:center; justify-content:center; gap:0.5cqw;">
+      <div style="width:3.125cqw; min-width:3.125cqw; height:3.125cqw; background:#8bfdff; flex-shrink:0;"></div>
+      <div class="f42-head">LAB STUDY</div>
+    </div>
+    <div style="position:absolute; left:51.3281%; top:27.3611%; width:19.5313%; height:3.125cqw; display:flex; align-items:center; justify-content:center; gap:0.5cqw;">
+      <div style="width:3.125cqw; min-width:3.125cqw; height:3.125cqw; background:#ffdad9; flex-shrink:0;"></div>
+      <div class="f42-head">ONLINE STUDY</div>
+    </div>
     <!-- y-axis context labels -->
     <div class="f42-head" style="left:2.9688%; top:28.0556%;">APP</div>
     <div class="f42-head" style="left:3.5938%; top:72.7778%;">TASKS</div>
@@ -1893,9 +1897,11 @@
     <div class="f42-bar-lbl" style="left:78.125%;  top:55.4167%; width:6.4063%;">Search</div>
     <div class="f42-bar-lbl" style="left:84.6875%; top:55.4167%; width:6.4063%;">Mark As</div>
     <div class="f42-bar-lbl" style="left:91.25%;   top:55.4167%; width:6.4063%;">Reply</div>
-    <!-- red vertical arrows at x=111 (flanking the WIFI bar) -->
+    <!-- red vertical arrows at x=111 with downward arrowheads -->
     <div style="position:absolute; left:8.6719%; top:31.6667%; width:0.2344cqw; height:5.1563cqw; background:#ff0000;"></div>
+    <div style="position:absolute; left:calc(8.6719% - 0.4297cqw); top:40.8333%; width:0; height:0; border-left:0.4297cqw solid transparent; border-right:0.4297cqw solid transparent; border-top:0.625cqw solid #ff0000;"></div>
     <div style="position:absolute; left:8.6719%; top:62.5%;    width:0.2344cqw; height:5.1563cqw; background:#ff0000;"></div>
+    <div style="position:absolute; left:calc(8.6719% - 0.4297cqw); top:71.6667%; width:0; height:0; border-left:0.4297cqw solid transparent; border-right:0.4297cqw solid transparent; border-top:0.625cqw solid #ff0000;"></div>
     <!-- ghost "3" -->
     <div style="position:absolute; left:85.2344%; top:65.2778%; color:#fff; opacity:0.20; font-weight:700; font-size:15.625cqw; line-height:1;">3</div>
     <!-- footer nav -->
