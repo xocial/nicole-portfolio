@@ -411,6 +411,10 @@
   .f39-title { position:absolute; color:var(--white); font-weight:700; font-size:1.875cqw; }
   .f39-label { position:absolute; color:#00c1ff; font-weight:700; font-size:2.3438cqw; text-align:center; }
 
+  /* ================= FRAME 41 — Swipe Research: Two Studies ================= */
+  .f41-study { position:absolute; color:var(--white); font-weight:700; font-size:1.5625cqw; text-align:center; line-height:1.3; }
+  .f41-q     { position:absolute; color:#00c1ff;      font-weight:400; font-size:1.1719cqw; text-align:center; line-height:1.3; }
+
   /* ================= FRAME 40 — Swipe Research Q2: Degree of Knowledge ================= */
   .f40-title      { position:absolute; color:var(--white); font-weight:700; font-size:1.875cqw; }
   .f40-ring-label { position:absolute; font-weight:700; font-size:2.3438cqw; text-align:center; }
@@ -1780,6 +1784,40 @@
     <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 33</div>
   </section>
 
+  <!-- ================= FRAME 41 — Swipe Research: Two Studies ================= -->
+  <section class="frame" id="frame41" data-title="Frame 41 · Swipe Research — Two Studies">
+    <div class="f-header">TWO STUDIES</div>
+    <!-- tab bar (Research active) -->
+    <div class="f9-tab" data-go="frame29" style="left:61.7188%; top:4.1667%; width:5.7031%; height:4.8611%;">Summary</div>
+    <div class="f9-tab" data-go="frame30" style="left:67.8906%; top:4.1667%; width:5.7031%; height:4.8611%;">Problem</div>
+    <div class="f9-tab" data-go="frame31" style="left:74.0625%; top:4.1667%; width:5.7031%; height:4.8611%;">Process</div>
+    <div class="f9-tab active"             style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
+    <div class="f9-tab" data-go="frame47" style="left:86.4141%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
+    <div class="f9-tab" data-go="frame49" style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
+    <!-- study photos -->
+    <img src="f41_img8.png" alt="" style="position:absolute; left:16.6406%; top:34.7222%; width:31.25%; height:44.1667%; object-fit:fill;">
+    <img src="f41_img9.png" alt="" style="position:absolute; left:29.7656%; top:30%;     width:44.2969%; height:50.2778%; object-fit:fill;">
+    <!-- icons overlaid on photos -->
+    <img src="f41_icon2.png" alt="" style="position:absolute; left:38.0469%; top:36.3889%; width:3.75%;   height:6.6667%;  object-fit:fill;">
+    <img src="f41_icon3.png" alt="" style="position:absolute; left:38.4375%; top:57.9167%; width:3.2031%; height:6.3889%;  object-fit:fill;">
+    <img src="f41_icon4.png" alt="" style="position:absolute; left:50.7031%; top:34.3056%; width:4.9219%; height:8.75%;    object-fit:fill;">
+    <img src="f41_icon1.png" alt="" style="position:absolute; left:51.4844%; top:55.8333%; width:3.6719%; height:8.6111%;  object-fit:fill;">
+    <!-- study labels -->
+    <div class="f41-study" style="left:16.3281%; top:63.6111%; width:11.0938%;">Lab study<br>28 persons</div>
+    <div class="f41-study" style="left:61.7188%; top:42.3611%; width:11.0938%;">Online study<br>144 persons</div>
+    <!-- question texts -->
+    <div class="f41-q" style="left:34.6094%; top:45.6944%; width:11.0938%;">Do users know swhidgets?</div>
+    <div class="f41-q" style="left:47.1094%; top:45.6944%; width:12.1094%;">How do users discover swhidgets even if they are hidden?</div>
+    <div class="f41-q" style="left:34.6094%; top:66.6667%; width:11.0938%;">Do users use swhidgets?</div>
+    <div class="f41-q" style="left:47.1094%; top:66.6667%; width:12.1094%;">How do users think and feel about swhidgets?</div>
+    <!-- ghost "3" -->
+    <div style="position:absolute; left:85.2344%; top:65.2778%; color:#fff; opacity:0.20; font-weight:700; font-size:15.625cqw; line-height:1;">3</div>
+    <!-- footer nav -->
+    <a class="btn f9-sm" style="left:42.6563%; top:93.0556%; width:5.7031%;" href="#" data-go="frame40">Previous</a>
+    <a class="btn f9-sm" style="left:49.4531%; top:93.0556%; width:5.7031%;" href="#" data-go="frame42">Next</a>
+    <div class="f9-page" style="left:94.6094%; top:94.4444%;">Page 34</div>
+  </section>
+
   <!-- ================= FRAME 37 — Swipe-Revealed Hidden Widgets (Research Q1 p6, Affordance types table) ================= -->
   <section class="frame" id="frame37" data-title="Frame 37 · Swipe Research Q1 — SLD vs Affordance">
     <div class="f-header">Q1: WHAT IS SIGNIFIER-LESS DESIGN (SLD)</div>
@@ -2094,7 +2132,7 @@
 
 <script>
   /* ---- simple frame navigation ---- */
-  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33", "frame34", "frame35", "frame36", "frame37", "frame38", "frame39", "frame40"];
+  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33", "frame34", "frame35", "frame36", "frame37", "frame38", "frame39", "frame40", "frame41"];
   let cur = 0;
 
   function showFrame(id) {
