@@ -514,6 +514,28 @@
   @media (max-width:560px) {
     #bar { font-size:11px; }
   }
+
+  /* ── GIF player ── */
+  .gif-player { position:absolute; cursor:pointer; overflow:hidden; }
+  .gif-player canvas, .gif-player .gif-anim {
+    position:absolute; inset:0; width:100%; height:100%; display:block;
+  }
+  .gif-overlay {
+    position:absolute; inset:0; z-index:2;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(0,0,0,0.20); transition:opacity 0.15s;
+  }
+  .gif-player.playing .gif-overlay { opacity:0; }
+  .gif-player.playing:hover .gif-overlay { opacity:1; }
+  .gif-icon {
+    width:22%; aspect-ratio:1; min-width:26px;
+    background:rgba(255,255,255,0.92); border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.35);
+  }
+  .gif-icon svg { width:48%; height:48%; }
+  #frame47 .btn { height:0.9485%; }
+  #frame45 .btn { height:0.4164%; }
 </style>
 </head>
 <body>
@@ -2299,9 +2321,103 @@
     <div class="f9-page" style="left:94.6094%; top:99.5360%;">Page 37</div>
   </section>
 
+  <!-- ================= FRAME 47 — Signifier-Less Design PROPOSALS (Page 38, 1280×3690) ================= -->
+  <section class="frame" id="frame47" data-title="Frame 47 · Signifier-Less Design — Proposals"
+           style="aspect-ratio:1280/3690; background:#041540;">
+
+    <!-- background: all static elements (title, labels, tilt section, bg rows) -->
+    <img src="f47_bg.png" style="position:absolute;left:0;top:0;width:100%;" alt=""/>
+
+    <!-- tab bar (Design active) -->
+    <div class="f9-tab" data-go="frame29" style="left:61.7188%; top:0.8130%; width:5.7031%; height:0.9485%;">Summary</div>
+    <div class="f9-tab" data-go="frame30" style="left:67.8906%; top:0.8130%; width:5.7031%; height:0.9485%;">Problem</div>
+    <div class="f9-tab" data-go="frame31" style="left:74.0625%; top:0.8130%; width:5.7031%; height:0.9485%;">Process</div>
+    <div class="f9-tab" data-go="frame44" style="left:80.2344%; top:0.8130%; width:5.7031%; height:0.9485%;">Research</div>
+    <div class="f9-tab active"             style="left:86.4063%; top:0.8130%; width:5.7031%; height:0.9485%;">Design</div>
+    <div class="f9-tab" data-go="frame49" style="left:92.6563%; top:0.8130%; width:5.7031%; height:0.9485%;">Conclusion</div>
+
+    <!-- ── Row 1: System Lock (dark bg) ── -->
+    <div class="gif-player" data-gif="f47_gif01.gif"
+         style="left:33.8281%;top:5.0949%;width:14.4531cqw;height:27.5781cqw;">
+      <canvas></canvas><img class="gif-anim" style="display:none;">
+      <div class="gif-overlay"><div class="gif-icon"></div></div>
+    </div>
+    <div class="gif-player" data-gif="f47_gif02.gif"
+         style="left:50.3906%;top:5.0949%;width:14.4531cqw;height:27.5781cqw;">
+      <canvas></canvas><img class="gif-anim" style="display:none;">
+      <div class="gif-overlay"><div class="gif-icon"></div></div>
+    </div>
+
+    <!-- ── Row 2: Mail App (light bg) ── -->
+    <div class="gif-player" data-gif="f47_gif03.gif"
+         style="left:17.3438%;top:20.8672%;width:14.4531cqw;height:27.5781cqw;">
+      <canvas></canvas><img class="gif-anim" style="display:none;">
+      <div class="gif-overlay"><div class="gif-icon"></div></div>
+    </div>
+    <div class="gif-player" data-gif="f47_gif04.gif"
+         style="left:33.9063%;top:20.8672%;width:14.5313cqw;height:27.5781cqw;">
+      <canvas></canvas><img class="gif-anim" style="display:none;">
+      <div class="gif-overlay"><div class="gif-icon"></div></div>
+    </div>
+    <div class="gif-player" data-gif="f47_gif05.gif"
+         style="left:50.5469%;top:20.8672%;width:14.4531cqw;height:27.5781cqw;">
+      <canvas></canvas><img class="gif-anim" style="display:none;">
+      <div class="gif-overlay"><div class="gif-icon"></div></div>
+    </div>
+    <div class="gif-player" data-gif="f47_gif06.gif"
+         style="left:67.1094%;top:20.8672%;width:14.5313cqw;height:27.5781cqw;">
+      <canvas></canvas><img class="gif-anim" style="display:none;">
+      <div class="gif-overlay"><div class="gif-icon"></div></div>
+    </div>
+
+    <!-- ── Row 3: Message (dark bg) ── -->
+    <div class="gif-player" data-gif="f47_gif07.gif"
+         style="left:9.2969%;top:37.3983%;width:14.4531cqw;height:27.5781cqw;">
+      <canvas></canvas><img class="gif-anim" style="display:none;">
+      <div class="gif-overlay"><div class="gif-icon"></div></div>
+    </div>
+    <div class="gif-player" data-gif="f47_gif08.gif"
+         style="left:25.7031%;top:37.3983%;width:14.5313cqw;height:27.6563cqw;">
+      <canvas></canvas><img class="gif-anim" style="display:none;">
+      <div class="gif-overlay"><div class="gif-icon"></div></div>
+    </div>
+    <div class="gif-player" data-gif="f47_gif08b.gif"
+         style="left:42.2656%;top:37.3983%;width:14.5313cqw;height:27.6563cqw;">
+      <canvas></canvas><img class="gif-anim" style="display:none;">
+      <div class="gif-overlay"><div class="gif-icon"></div></div>
+    </div>
+    <div class="gif-player" data-gif="f47_gif09.gif"
+         style="left:58.6719%;top:37.3983%;width:14.5313cqw;height:27.7344cqw;">
+      <canvas></canvas><img class="gif-anim" style="display:none;">
+      <div class="gif-overlay"><div class="gif-icon"></div></div>
+    </div>
+    <div class="gif-player" data-gif="f47_gif09b.gif"
+         style="left:75.3125%;top:37.3983%;width:14.5313cqw;height:27.7344cqw;">
+      <canvas></canvas><img class="gif-anim" style="display:none;">
+      <div class="gif-overlay"><div class="gif-icon"></div></div>
+    </div>
+
+    <!-- ── Row 4: Message SlideIn variants (dark bg) ── -->
+    <div class="gif-player" data-gif="f47_gif10.gif"
+         style="left:31.1719%;top:52.5203%;width:14.5313cqw;height:27.6563cqw;">
+      <canvas></canvas><img class="gif-anim" style="display:none;">
+      <div class="gif-overlay"><div class="gif-icon"></div></div>
+    </div>
+    <div class="gif-player" data-gif="f47_gif10b.gif"
+         style="left:48.3594%;top:52.5203%;width:14.5313cqw;height:27.6563cqw;">
+      <canvas></canvas><img class="gif-anim" style="display:none;">
+      <div class="gif-overlay"><div class="gif-icon"></div></div>
+    </div>
+
+    <!-- footer nav -->
+    <a class="btn f9-sm" style="left:42.6563%; top:97.9133%; width:5.7031%;" href="#" data-go="frame45">Previous</a>
+    <a class="btn f9-sm" style="left:49.4531%; top:97.9133%; width:5.7031%;" href="#" data-go="frame49">Next</a>
+    <div class="f9-page" style="left:94.6094%; top:98.1842%;">Page 38</div>
+  </section>
+
 <script>
   /* ---- simple frame navigation ---- */
-  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33", "frame34", "frame35", "frame36", "frame37", "frame38", "frame39", "frame40", "frame41", "frame42", "frame44", "frame45"];
+  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33", "frame34", "frame35", "frame36", "frame37", "frame38", "frame39", "frame40", "frame41", "frame42", "frame44", "frame45", "frame47"];
   let cur = 0;
 
   function showFrame(id) {
@@ -2324,6 +2440,45 @@
   });
 
   showFrame("frame1");
+
+  // ── GIF player: click to play/pause, canvas captures current frame on pause ──
+  (function(){
+    var playIcon='<svg viewBox="0 0 24 24"><polygon points="7,4 20,12 7,20" fill="#041540"/></svg>';
+    var pauseIcon='<svg viewBox="0 0 24 24"><rect x="5" y="4" width="4" height="16" rx="1" fill="#041540"/><rect x="15" y="4" width="4" height="16" rx="1" fill="#041540"/></svg>';
+    document.querySelectorAll('.gif-player').forEach(function(player){
+      var canvas=player.querySelector('canvas');
+      var img=player.querySelector('.gif-anim');
+      var icon=player.querySelector('.gif-icon');
+      var ctx=canvas.getContext('2d');
+      var playing=false;
+      icon.innerHTML=playIcon;
+      img.onload=function(){
+        canvas.width=img.naturalWidth;
+        canvas.height=img.naturalHeight;
+        ctx.drawImage(img,0,0);
+        img.style.display='none';
+      };
+      img.src=player.dataset.gif;
+      player.addEventListener('click',function(){
+        if(!playing){
+          canvas.style.display='none';
+          img.style.display='block';
+          icon.innerHTML=pauseIcon;
+          player.classList.add('playing');
+          playing=true;
+        } else {
+          canvas.width=img.naturalWidth;
+          canvas.height=img.naturalHeight;
+          ctx.drawImage(img,0,0);
+          img.style.display='none';
+          canvas.style.display='block';
+          icon.innerHTML=playIcon;
+          player.classList.remove('playing');
+          playing=false;
+        }
+      });
+    });
+  })();
 </script>
 </body>
 </html>
