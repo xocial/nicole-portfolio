@@ -2413,9 +2413,28 @@
     <a class="btn f9-sm" style="left:49.4531%; top:97.9133%; width:5.7031%;" href="#" data-go="frame49">Next</a>
   </section>
 
+  <!-- ================= FRAME 49 — Conclusion (Page 39, 1280×720) ================= -->
+  <section class="frame" id="frame49" data-title="Frame 49 · Conclusion"
+           style="aspect-ratio:1280/720; background:#041540;">
+    <!-- full frame as integrated PNG (includes all text, columns, page number) -->
+    <img src="f49_full.png" style="position:absolute; left:0; top:0; width:100%;" alt="Conclusion"/>
+
+    <!-- tab bar (Conclusion active) -->
+    <div class="f9-tab" data-go="frame29" style="left:61.7188%; top:4.1667%; width:5.7031%; height:4.8611%;">Summary</div>
+    <div class="f9-tab" data-go="frame30" style="left:67.8906%; top:4.1667%; width:5.7031%; height:4.8611%;">Problem</div>
+    <div class="f9-tab" data-go="frame31" style="left:74.0625%; top:4.1667%; width:5.7031%; height:4.8611%;">Process</div>
+    <div class="f9-tab" data-go="frame44" style="left:80.2344%; top:4.1667%; width:5.7031%; height:4.8611%;">Research</div>
+    <div class="f9-tab" data-go="frame47" style="left:86.4063%; top:4.1667%; width:5.7031%; height:4.8611%;">Design</div>
+    <div class="f9-tab active"            style="left:92.6563%; top:4.1667%; width:5.7031%; height:4.8611%;">Conclusion</div>
+
+    <!-- footer nav — no Next (last frame); Back to projects returns to cover -->
+    <a class="btn f9-sm" style="left:3.4375%; top:93.0556%;" href="#" data-go="frame1">Back to projects</a>
+    <a class="btn f9-sm" style="left:42.5781%; top:93.0556%; width:5.7031%;" href="#" data-go="frame47">Previous</a>
+  </section>
+
 <script>
   /* ---- simple frame navigation ---- */
-  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33", "frame34", "frame35", "frame36", "frame37", "frame38", "frame39", "frame40", "frame41", "frame42", "frame44", "frame45", "frame47"];
+  const order = ["frame1", "frame2", "frame3", "frame4", "frame5", "frame6", "frame8", "frame9", "frame10", "frame11", "frame12", "frame13", "frame14", "frame16", "frame15", "frame17", "frame18", "frame19", "frame21", "frame22", "frame23", "frame24", "frame25", "frame26", "frame27", "frame28", "frame29", "frame30", "frame48", "frame31", "frame32", "frame33", "frame34", "frame35", "frame36", "frame37", "frame38", "frame39", "frame40", "frame41", "frame42", "frame44", "frame45", "frame47", "frame49"];
   let cur = 0;
 
   function showFrame(id) {
